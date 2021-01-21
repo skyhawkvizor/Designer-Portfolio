@@ -13,6 +13,15 @@
 	<meta name="google" content="notranslate">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="Lewis Nathaniel">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#000000">
+	<link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 	<!-- <meta http-equiv="Cache-control" content="public"> -->
 	<link rel="preload" as="font" href="assets/fonts/montserrat-v15-latin-300.woff2" type="font/woff2"
 		crossorigin="anonymous">
@@ -33,14 +42,17 @@
 		<div class="header__container container">
 			<div class="header__inner">
 				<a href="/" class="header__logo logo" title="logo">
-					<img src="assets/images/icons/logo.svg" width="169" height="134" class="logo-icon" alt="Logo">
+					<svg class="logo__icon">
+						<use xlink:href="assets/images/icons/logo.svg#logo"></use>
+					</svg>
 				</a>
 				<nav class="nav">
 					<a href="#works" class="nav__link">WORK</a>
 					<a href="#about" class="nav__link">ABOUT ME</a>
 					<a href="#blog" class="nav__link">BLOG</a>
-					<a href="#intro" class="nav__link">CONTACT</a>
-					<button class="nav__link btn btn--w130 btn--p30x10 btn--fz14 hire-me">HIRE ME</button>
+					<a href="#intro" class="nav__link" data-hystmodal="#contact">CONTACT</a>
+					<button class="nav__link btn btn--w130 btn--p30x10 btn--fz14 hire-me" data-hystmodal="#contact">HIRE
+						ME</button>
 				</nav>
 				<div class="header__burger burger">
 					<span></span>
@@ -103,8 +115,10 @@
 							</li>
 						</ul>
 						<div class="intro__buttons">
-							<button class="intro__btn btn btn--fz16 btn--p30x17 btn--w200 hire-me">hire me</button>
-							<button class="intro__btn btn btn--fz16 btn--p30x17 btn--w200 show-resume">see my resume</button>
+							<button class="intro__btn btn btn--fz16 btn--p30x17 btn--w200 hire-me" data-hystmodal="#contact">hire
+								me</button>
+							<button class="intro__btn btn btn--fz16 btn--p30x17 btn--w200 show-resume" data-hystmodal="#resume">see
+								my resume</button>
 						</div>
 					</div><!-- /.intro__left  -->
 					<div class="intro__right">
@@ -139,7 +153,8 @@
 						</li>
 					</ul><!-- /.works__menu  -->
 					<ul class="works__list">
-						<li class="works__item show" data-cat="blog" data-adress="brightbazzar" data-slides="3">
+						<li class="works__item show" data-cat="blog" data-adress="brightbazzar" data-slides="3"
+							data-hystmodal="#project">
 							<div class="works__work work">
 								<a href="#" class="work__img-link">
 									<picture class="work__img">
@@ -165,7 +180,7 @@
 							</div>
 						</li>
 						<li class="works__item show" data-cat="interaction" data-cat="blog" data-adress="rainbowplantlife"
-							data-slides="3">
+							data-slides="3" data-hystmodal="#project">
 							<div class="works__work work">
 								<a href="#" class="work__img-link">
 									<picture class="work__img">
@@ -191,7 +206,7 @@
 							</div>
 						</li>
 						<li class="works__item show" data-cat="interaction" data-cat="blog" data-adress="myfitnesspal"
-							data-slides="2">
+							data-slides="2" data-hystmodal="#project">
 							<div class="works__work work">
 								<a href="#" class="work__img-link">
 									<picture class="work__img">
@@ -216,8 +231,8 @@
 								</div>
 							</div>
 						</li>
-						<li class="works__item" data-cat="interaction" data-cat="landing" data-adress="transferwise"
-							data-slides="3">
+						<li class="works__item" data-cat="interaction" data-cat="landing" data-adress="transferwise" data-slides="3"
+							data-hystmodal="#project">
 							<div class="works__work work">
 								<a href="#" class="work__img-link">
 									<picture class="work__img">
@@ -242,7 +257,8 @@
 								</div>
 							</div>
 						</li>
-						<li class="works__item" data-cat="interaction" data-cat="landing" data-adress="shopia" data-slides="3">
+						<li class="works__item" data-cat="interaction" data-cat="landing" data-adress="shopia" data-slides="3"
+							data-hystmodal="#project">
 							<div class="works__work work">
 								<a href="#" class="work__img-link">
 									<picture class="work__img">
@@ -327,8 +343,10 @@
 								velit, in mollis erat nibh in libero.
 							</p>
 							<div class="about__buttons">
-								<button class="about__btn btn btn--p30x17 btn--w200 btn--fz16 hire-me">HIRE ME</button>
-								<button class="about__btn btn btn--p30x17 btn--w200 btn--fz16 show-resume">SEE MY RESUME </button>
+								<button class="about__btn btn btn--p30x17 btn--w200 btn--fz16 hire-me" data-hystmodal="#contact">HIRE
+									ME</button>
+								<button class="about__btn btn btn--p30x17 btn--w200 btn--fz16 show-resume"
+									data-hystmodal="#resume">SEE MY RESUME </button>
 							</div>
 						</div><!-- /.about__right  -->
 					</div>
@@ -562,15 +580,16 @@
 		
 		</section><!-- /.read-me -->
 		
-		<div class="modal">
-			<div class="modal__container container">
-				<div class="modal__window window">
-					<div class="window__inner modal-resume">
-						<button class="window__close close">
-							<svg class="close__icon">
-								<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
-							</svg>
-						</button>
+		
+		<div class="hystmodal" id="resume" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window hystmodal__window--resume" role="dialog" aria-modal="true">
+					<button class="window__close close" data-hystclose class="hystmodal__close">
+						<svg class="close__icon">
+							<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
+						</svg>
+					</button>
+					<div class="modal-resume">
 						<h2 class="modal-resume__title">
 							RESUME
 						</h2>
@@ -743,19 +762,87 @@
 						</div><!-- /.resume -->
 						<button class="modal-resume__hire-me btn btn--fz16 btn--p47x16  btn--black btn--fw400 hire-me">HIRE
 							ME</button>
-					</div><!-- /.window__inner -->
-				</div><!-- /.window -->
-			</div><!-- /.modal__container -->
-		</div><!-- /.modal -->
-		<div class="modal">
-			<div class="modal__container container">
-				<div class="modal__window window">
-					<div class="window__inner modal-contact">
-						<button class="window__close close">
-							<svg class="close__icon">
-								<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
-							</svg>
-						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="hystmodal" id="project" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window hystmodal__window--project" role="dialog" aria-modal="true">
+					<button class="window__close close" data-hystclose class="hystmodal__close">
+						<svg class="close__icon">
+							<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
+						</svg>
+					</button>
+					<div class="modal-project">
+						<div class="modal-project__left slider" data-da="modal-project__slider-wrap, 0, 750" data-width="787"
+							data-height="774">
+						</div><!-- /.slider -->
+						<div class="modal-project__right">
+							<h2 class="modal-project__title">
+								PROJECT TITLE
+							</h2>
+							<div class="modal-project__info">
+								<div class="modal-project__info-item">
+									CATEGORY
+								</div>
+								<time class="modal-project__info-item" datetime="2018">
+									2018
+								</time>
+							</div>
+							<div class="modal-project__client">
+								Client:
+								<span class="modal-project__client-name">
+									Creative Agency
+								</span>
+							</div>
+							<p class="modal-project__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus.
+								Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem,
+								elementum
+								consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo.
+								Praesent
+								dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus
+								orci
+								luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+								sem.
+								Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+								nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse
+								placerat, quam vitae ullamcorper
+							</p>
+							<div class="modal-project__slider-wrap">
+							</div>
+							<div class="modal-project__buttons" data-da="modal-project__slider-wrap, 1, 750">
+								<button class="modal-project__btn prev">
+									<svg class="modal-project__btn-arrow modal-project__btn-arrow--left">
+										<use xlink:href="assets/images/icons/arrow-left.svg#arrow-left"></use>
+									</svg>
+									PREVIOUS
+								</button>
+								<button class="modal-project__btn next">
+									NEXT
+									<svg class="modal-project__btn-arrow modal-project__btn-arrow--right">
+										<use xlink:href="assets/images/icons/arrow-right.svg#arrow-right"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="hystmodal" id="contact" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window hystmodal__window--contact" role="dialog" aria-modal="true">
+					<button class="window__close close" data-hystclose class="hystmodal__close">
+						<svg class="close__icon">
+							<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
+						</svg>
+					</button>
+		
+					<div class="modal-contact">
 						<div class="modal-contact__left">
 							<h2 class="modal-contact__title">
 								LET'S TALK!
@@ -795,82 +882,28 @@
 									type="submit">HIRE
 									ME</button>
 							</form>
-						</div><!-- /.modal-contact__left -->
+						</div>
 						<div class="modal-contact__right" data-da="modal-contact__left, 2, 650">
 							<!-- <img src="http://placehold.it/700x700/333" width="500" height="700" alt="img" class="modal-contact__img"> -->
-						</div><!-- /.modal-contact__right -->
-		
-					</div><!-- /.window__inner -->
-				</div><!-- /.window -->
-			</div><!-- /.modal__container -->
-		</div><!-- /.modal -->
-		<div class="modal">
-			<div class="modal__container container">
-				<div class="modal__window window">
-					<div class="window__inner modal-project">
-						<button class="window__close close">
-							<svg class="close__icon">
-								<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
-							</svg>
-						</button>
-						<!-- <div></div> -->
-						<div class="modal-project__left slider" data-da="modal-project__slider-wrap, 0, 750" data-width="787"
-							data-height="774">
-		
-						</div><!-- /.slider -->
-						<div class="modal-project__right">
-							<h2 class="modal-project__title">
-								PROJECT TITLE
-							</h2>
-							<div class="modal-project__info">
-								<div class="modal-project__info-item">
-									CATEGORY
-								</div>
-								<time class="modal-project__info-item" datetime="2018">
-									2018
-								</time>
-							</div>
-							<div class="modal-project__client">
-								Client:
-								<span class="modal-project__client-name">
-									Creative Agency
-								</span>
-							</div>
-		
-		
-		
-							<p class="modal-project__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus.
-								Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum
-								consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent
-								dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci
-								luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem.
-								Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
-								nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse
-								placerat, quam vitae ullamcorper
-							</p>
-							<div class="modal-project__slider-wrap">
-		
-							</div>
-							<div class="modal-project__buttons" data-da="modal-project__slider-wrap, 1, 750">
-								<button class="modal-project__btn prev">
-									<svg class="modal-project__btn-arrow modal-project__btn-arrow--left">
-										<use xlink:href="assets/images/icons/arrow-left.svg#arrow-left"></use>
-									</svg>
-									PREVIOUS
-								</button>
-								<button class="modal-project__btn next">
-									NEXT
-									<svg class="modal-project__btn-arrow modal-project__btn-arrow--right">
-										<use xlink:href="assets/images/icons/arrow-right.svg#arrow-right"></use>
-									</svg>
-								</button>
-							</div>
-						</div><!-- /.modal-project__right -->
-					</div><!-- /.window__inner -->
-				</div><!-- /.window -->
-			</div><!-- /.modal__container -->
-		</div><!-- /.modal -->
+							<picture class="modal-contact__img">
+								<source class="lazyload"
+									data-srcset="assets/images/modal-contact/460x300.webp 1x, assets/images/modal-contact/460x300@2x.webp 2x, assets/images/modal-contact/460x300@3x.webp 3x, assets/images/modal-contact/460x300@4x.webp 4x"
+									type="image/webp" media="(max-width:650px)">
+								<source class="lazyload"
+									data-srcset="assets/images/modal-contact/460x300.webp 1x, assets/images/modal-contact/460x300@2x.webp 2x, assets/images/modal-contact/460x300@3x.webp 3x, assets/images/modal-contact/460x300@4x.webp 4x"
+									type="image/png">
+								<source class="lazyload"
+									data-srcset="assets/images/modal-contact/450x700.webp 1x, assets/images/modal-contact/450x700@2x.webp 2x, assets/images/modal-contact/450x700@3x.webp 3x, assets/images/modal-contact/450x700@4x.webp 4x"
+									type="image/webp">
+								<img data-src="assets/images/1.png"
+									data-srcset="assets/images/modal-contact/450x700@2x.png 2x, assets/images/modal-contact/450x700@3x.png 3x, assets/images/modal-contact/450x700@4x.png 4x"
+									width="500" height="700" alt="img">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<footer class="footer">
@@ -941,7 +974,8 @@
 							<a href="#intro" class="footer-nav__link">CONTACT</a>
 						</li>
 						<li class="footer-nav__item">
-							<button class="footer-nav__link btn btn--p20x12 btn--fz14 btn--white btn--fw300 btn--br1 hire-me">HIRE
+							<button class="footer-nav__link btn btn--p20x12 btn--fz14 btn--white btn--fw300 btn--br1 hire-me"
+								data-hystmodal="#contact">HIRE
 								ME</button>
 						</li>
 					</ul>

@@ -728,9 +728,143 @@ html {
     opacity: 0;
 }
 
-html.scrollFixed {
+.hystmodal__opened {
+    position: fixed;
+    right: 0;
+    left: 0;
     overflow: hidden;
-    height: 100vh;
+}
+
+.hystmodal__shadow {
+    position: fixed;
+    border: none;
+    display: block;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 98;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    background-color: black;
+}
+
+.hystmodal__shadow--show {
+    pointer-events: auto;
+    opacity: 0.6;
+}
+
+.hystmodal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    opacity: 1;
+    pointer-events: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    z-index: 99;
+    visibility: hidden;
+}
+
+.hystmodal--active {
+    opacity: 1;
+}
+
+.hystmodal--moved,
+.hystmodal--active {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.hystmodal__wrap {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@supports (padding: 0px) {
+    .hystmodal__wrap {
+        padding-right: max(20px, env(safe-area-inset-right));
+        padding-left: max(20px, env(safe-area-inset-left));
+    }
+}
+
+.hystmodal__window {
+    margin: 50px 0;
+    box-sizing: border-box;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    background: #fff;
+    width: 100%;
+    max-width: 1170px;
+    overflow: visible;
+    transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+    transition: transform 0.2s ease 0s, opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.hystmodal__window--contact {
+    max-width: 900px;
+}
+
+@media (max-width: 650px) {
+    .hystmodal__window--contact {
+        max-width: 510px;
+    }
+}
+
+@media (max-width: 750px) {
+    .hystmodal__window--project {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hystmodal__window--resume {
+        max-width: 460px;
+    }
+}
+
+.hystmodal--active .hystmodal__window {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+html.scrollFixed, html.hystmodal__opened {
+    position: fixed;
+    right: 0;
+    left: 0;
+    overflow: hidden;
 }
 
 .menuOpen body {
@@ -1384,20 +1518,6 @@ html.scrollFixed {
     }
 }
 
-.about__left::after {
-    content: "";
-    width: 75%;
-    height: 75%;
-    display: block;
-    background-color: #efefef;
-    position: absolute;
-    bottom: 0;
-    left: 40%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: -1;
-}
-
 .about__avatar {
     max-width: 58em;
     -ms-flex-item-align: end;
@@ -1653,6 +1773,13 @@ html.scrollFixed {
     font-size: 10px;
 }
 
+.read-me__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+
 .read-me__header {
     margin: 0px 0px 4.5em 0px;
 }
@@ -1718,6 +1845,8 @@ html.scrollFixed {
 }
 
 .read-me__show-more {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
     color: #717072;
     font-size: 1.4em;
     text-align: right;
@@ -1971,16 +2100,6 @@ html.scrollFixed {
     display: block;
 }
 
-.modal__container {
-    min-height: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
 @supports (padding: 0px) {
     .modal__container {
         padding-top: max(20px, env(safe-area-inset-top));
@@ -1998,8 +2117,8 @@ html.scrollFixed {
 }
 
 .window__inner {
-    margin: auto;
-    position: relative;
+    display: inline;
+    margin: 0 auto;
 }
 
 .close {
@@ -2133,10 +2252,15 @@ html.scrollFixed {
 }
 
 .resume__right {
-    margin: 3.2em 0px 0px 0px;
     justify-self: left;
     max-width: 42em;
     text-align: left;
+}
+
+@media (max-width: 600px) {
+    .resume__right {
+        margin: 3.2em 0px 0px 0px;
+    }
 }
 
 .resume__theme {
@@ -2149,7 +2273,7 @@ html.scrollFixed {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
     .resume__theme {
         font-size: 10px;
     }
@@ -2260,7 +2384,7 @@ html.scrollFixed {
 }
 
 .progress__bar {
-    width: 10.7em;
+    width: 10em;
     height: 0.43em;
     display: block;
     background-color: #efefef;
@@ -2298,7 +2422,9 @@ html.scrollFixed {
 }
 
 .modal-contact {
-    max-width: 90em;
+    max-width: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     display: -ms-flexbox;
     display: flex;
     background-color: #ffffff;
@@ -2586,6 +2712,12 @@ html.scrollFixed {
     font-size: 12px;
     font-weight: 300;
     line-height: 2;
+}
+
+@media (max-width: 750px) {
+    .modal-project__text {
+        margin: 2.5em -25px 0px 0px;
+    }
 }
 
 .modal-project__buttons {
