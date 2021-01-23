@@ -891,13 +891,12 @@ html.scrollFixed, html.hystmodal__opened {
 @media (max-width: 768px) {
     .header {
         margin: 0px 0px 2em 0px;
-        box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
     }
 
     .scrollFixed .header {
-        position: relative;
-        top: 0;
+        position: fixed;
         left: 0;
+        top: 0;
         right: 0;
         z-index: 10;
     }
@@ -917,7 +916,6 @@ html.scrollFixed, html.hystmodal__opened {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    position: relative;
 }
 
 @media (max-width: 768px) {
@@ -935,18 +933,18 @@ html.scrollFixed, html.hystmodal__opened {
 }
 
 .logo {
-    max-width: 17rem;
+    font-size: 1rem;
 }
 
 @media (max-width: 500px) {
     .logo {
-        max-width: 15rem;
+        font-size: 0.9rem;
     }
 }
 
 .logo__icon {
-    width: 100%;
-    height: auto;
+    width: 16.9em;
+    height: 5.5em;
 }
 
 .nav {
@@ -992,13 +990,8 @@ html.scrollFixed, html.hystmodal__opened {
 @media (max-width: 768px) {
     .nav {
         display: none;
-        width: 100vw;
-        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.05);
         -ms-flex-flow: column;
         flex-flow: column;
-        position: fixed;
-        top: 80px;
-        left: 0;
     }
 
     .menuOpen .nav {
@@ -2501,6 +2494,11 @@ html.scrollFixed, html.hystmodal__opened {
     position: absolute;
     left: 0;
     top: 0;
+    height: 100%;
+}
+
+.modal-contact__img img,
+    .modal-contact__img source {
     -o-object-fit: cover;
     object-fit: cover;
     height: 100%;
