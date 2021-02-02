@@ -749,6 +749,8 @@ html.scrollFixed, html.hystmodal__opened {
       position: sticky;
       top: 0;
       z-index: 10; }
+      .menuOpen .header {
+        box-shadow: none; }
       .scrollFixed .header {
         position: fixed;
         left: 0;

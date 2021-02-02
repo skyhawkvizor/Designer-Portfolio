@@ -891,6 +891,11 @@ html.scrollFixed, html.hystmodal__opened {
 @media (max-width: 768px) {
     .header {
         margin: 0px 0px 2em 0px;
+        box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 10;
     }
 
     .scrollFixed .header {
@@ -902,9 +907,9 @@ html.scrollFixed, html.hystmodal__opened {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .header {
-        margin: 0px 0px 1em 0px;
+        margin: 0px 0px 0px 0px;
     }
 }
 
@@ -925,6 +930,12 @@ html.scrollFixed, html.hystmodal__opened {
     }
 }
 
+@media (max-width: 700px) {
+    .header__inner {
+        padding: 1em 0px 1em 0px;
+    }
+}
+
 @media (max-width: 768px) {
     .header__burger {
         display: -ms-flexbox;
@@ -936,7 +947,7 @@ html.scrollFixed, html.hystmodal__opened {
     font-size: 1rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .logo {
         font-size: 0.9rem;
     }
@@ -997,6 +1008,7 @@ html.scrollFixed, html.hystmodal__opened {
     .menuOpen .nav {
         display: -ms-flexbox;
         display: flex;
+        overflow-y: auto;
     }
 }
 
