@@ -898,6 +898,10 @@ html.scrollFixed, html.hystmodal__opened {
         z-index: 10;
     }
 
+    .menuOpen .header {
+        box-shadow: none;
+    }
+
     .scrollFixed .header {
         position: fixed;
         left: 0;
@@ -1009,6 +1013,7 @@ html.scrollFixed, html.hystmodal__opened {
         display: -ms-flexbox;
         display: flex;
         overflow-y: auto;
+        scrollbar-width: thin;
     }
 }
 
