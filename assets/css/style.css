@@ -584,6 +584,7 @@ html {
 
 /* Ограничивающая оболочка */
 .slick-list {
+    height: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -593,10 +594,16 @@ html {
     height: 100%;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 /* Слайд */
 .slick-slide {
+    height: 100%;
+}
+
+.slick-slide > div {
     height: 100%;
 }
 
@@ -614,9 +621,15 @@ html {
     display: flex;
     position: absolute;
     left: 50%;
-    bottom: -3rem;
+    bottom: 3rem;
     -webkit-transform: translate(-50%, 50%);
     transform: translate(-50%, 50%);
+}
+
+@media (max-width: 750px) {
+    .slider .slick-dots {
+        bottom: 7em;
+    }
 }
 
 .slider .slick-dots li {
@@ -2739,8 +2752,13 @@ html.scrollFixed, html.hystmodal__opened {
 .modal-project__slider-wrap {
     margin: 3em 0em 0px 0em;
     padding: 0px 0px 6em 0px;
-    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
     position: relative;
+}
+
+@media (max-width: 750px) {
+    .modal-project__slider-wrap {
+        padding: 0px 0px 10em 0px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -2802,16 +2820,6 @@ html.scrollFixed, html.hystmodal__opened {
 
 .modal-project__btn-arrow--right {
     margin-left: 1rem;
-}
-
-@media (max-width: 600px) {
-    .modal-project__btn-text {
-        display: none;
-    }
-}
-
-.slider {
-    position: relative;
 }
 
 .lazyload,
