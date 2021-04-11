@@ -47,11 +47,12 @@
 						<use xlink:href="assets/images/icons/logo.svg#logo"></use>
 					</svg>
 				</a>
-				<nav class="nav" data-da="header, 1, 768">
-					<a href="#works" class="nav__link">WORK</a>
-					<a href="#about" class="nav__link">ABOUT ME</a>
-					<a href="#blog" class="nav__link">BLOG</a>
-					<a href="#intro" class="nav__link" data-hystmodal="#contact">CONTACT</a>
+				<nav class="nav">
+					<a href="#intro" class="nav__link hoverEffect">Home</a>
+					<a href="#works" class="nav__link hoverEffect">WORK</a>
+					<a href="#about" class="nav__link hoverEffect">ABOUT ME</a>
+					<a href="#opinions" class="nav__link hoverEffect">Opinions</a>
+					<a href="#blog" class="nav__link hoverEffect">BLOG</a>
 					<button class="nav__link btn btn--w130 btn--p30x10 btn--fz14 hire-me hoverEffect" data-hystmodal="#contact">
 						<span>HIRE ME</span>
 					</button>
@@ -163,10 +164,10 @@
 							<a href="apps" class="works__menu-link hoverEffect">Apps</a>
 						</li>
 						<li class="works__menu-item">
-							<a href="web" class="works__menu-link hoverEffect">Web</a>
+							<a href="icons" class="works__menu-link hoverEffect">Icons</a>
 						</li>
 						<li class="works__menu-item">
-							<a href="icons" class="works__menu-link hoverEffect">Icons</a>
+							<a href="web" class="works__menu-link hoverEffect">Web</a>
 						</li>
 					</ul><!-- /.works__menu  -->
 					<ul class="works__list">
@@ -262,7 +263,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="works__item" data-cat="apps" data-adress="Instagram-icon" data-slides="3"
+						<li class="works__item" data-cat="icons" data-adress="Instagram-icon" data-slides="3"
 							data-hystmodal="#project">
 							<div class="works__work work hoverEffect">
 								<a href="#" class="work__img-link">
@@ -495,7 +496,7 @@
 		
 				</div><!-- /.about__inner -->
 			</div><!-- /.about__container -->
-		</section><!-- /.about  -->		<div class="opinions padding padding padding_top-bottom">
+		</section><!-- /.about  -->		<div class="opinions padding padding padding_top-bottom" id="opinions">
 			<div class="opinions__top">
 				<div class="opinions__container container padding padding_right-left">
 					<div class="opinions__inner">
@@ -556,17 +557,17 @@
 					</div><!-- /.read-me__header -->
 					<ul class="read-me__articles-list">
 						<li class="read-me__articles-item show">
-							<article class="read-me__article article">
+							<article class="read-me__article article" data-adress="team-work" data-width="700" data-height="361">
 								<div class="article__header">
 									<picture class="article__img">
 										<source class="lazyload"
 											srcset="data:image/gif;base64,R0lGODlhcgEEAYAAAP///wAAACH5BAEAAAEALAAAAAByAQQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8a3jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fuHwUAADs="
-											data-srcset="assets/images/read-me/team.webp 1x, assets/images/read-me/team@2x.webp 2x, assets/images/read-me/team@3x.webp 3x, assets/images/read-me/team@4x.webp 4x"
+											data-srcset="assets/images/read-me/team-work/preview.webp 1x, assets/images/read-me/team-work/preview@2x.webp 2x, assets/images/read-me/team-work/preview@3x.webp 3x, assets/images/read-me/team-work/preview@4x.webp 4x"
 											type="image/webp">
 										<img class="lazyload"
 											src="data:image/gif;base64,R0lGODlhcgEEAYAAAP///wAAACH5BAEAAAEALAAAAAByAQQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8a3jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fuHwUAADs="
-											data-src="assets/images/read-me/team.jpg"
-											data-srcset="assets/images/read-me/team@2x.jpg 2x, assets/images/read-me/team@3x.jpg 3x, assets/images/read-me/team@4x.jpg 4x"
+											data-src="assets/images/read-me/team-work/preview.png"
+											data-srcset="assets/images/read-me/team-work/preview@2x.png 2x, assets/images/read-me/team-work/preview@3x.png 3x, assets/images/read-me/team-work/preview@4x.png 4x"
 											width="370" height="260" alt="Team work">
 									</picture>
 									<time class="article__data" datetime="2020-06-11">
@@ -587,7 +588,7 @@
 									consequat.
 								</p>
 								<div class="article__buttons">
-									<button class="article__read-more btn btn--fz14 btn--p20x12 hoverEffect">
+									<button class="article__read-more btn btn--fz14 btn--p20x12 hoverEffect" data-hystmodal="#post">
 										<span>
 											READ MORE
 										</span>
@@ -597,17 +598,17 @@
 							</article>
 						</li><!-- /.read-me__articles-item -->
 						<li class="read-me__articles-item show">
-							<article class="read-me__article article">
+							<article class="read-me__article article" data-adress="colors" data-width="700" data-height="394">
 								<div class="article__header">
 									<picture class="article__img">
 										<source class="lazyload"
 											srcset="data:image/gif;base64,R0lGODlhcgEEAYAAAP///wAAACH5BAEAAAEALAAAAAByAQQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8a3jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fuHwUAADs="
-											data-srcset="assets/images/read-me/colors.webp 1x, assets/images/read-me/colors@2x.webp 2x, assets/images/read-me/colors@3x.webp 3x, assets/images/read-me/colors@4x.webp 4x"
+											data-srcset="assets/images/read-me/colors/preview.webp 1x, assets/images/read-me/colors/preview@2x.webp 2x, assets/images/read-me/colors/preview@3x.webp 3x, assets/images/read-me/colors/preview@4x.webp 4x"
 											type="image/webp">
 										<img class="lazyload"
 											src="data:image/gif;base64,R0lGODlhcgEEAYAAAP///wAAACH5BAEAAAEALAAAAAByAQQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8a3jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fuHwUAADs="
-											data-src="assets/images/read-me/colors.jpg"
-											data-srcset="assets/images/read-me/colors@2x.jpg 2x, assets/images/read-me/colors@3x.jpg 3x, assets/images/read-me/colors@4x.jpg 4x"
+											data-src="assets/images/read-me/colors/preview.png"
+											data-srcset="assets/images/read-me/colors/preview@2x.png 2x, assets/images/read-me/colors/preview@3x.png 3x, assets/images/read-me/colors/preview@4x.png 4x"
 											width="370" height="260" alt="Colors">
 									</picture>
 									<time class="article__data" datetime="2020-06-08">
@@ -628,7 +629,7 @@
 									consequat.
 								</p>
 								<div class="article__buttons">
-									<button class="article__read-more btn btn--fz14 btn--p20x12 hoverEffect">
+									<button class="article__read-more btn btn--fz14 btn--p20x12 hoverEffect" data-hystmodal="#post">
 										<span>
 											READ MORE
 										</span>
@@ -637,17 +638,18 @@
 							</article>
 						</li><!-- /.read-me__articles-item -->
 						<li class="read-me__articles-item show">
-							<article class="read-me__article article">
+							<article class="read-me__article article" data-adress="hiring-a-designer" data-width="700"
+								data-height="394">
 								<div class="article__header">
 									<picture class="article__img">
 										<source class="lazyload"
 											srcset="data:image/gif;base64,R0lGODlhcgEEAYAAAP///wAAACH5BAEAAAEALAAAAAByAQQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8a3jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fuHwUAADs="
-											data-srcset="assets/images/read-me/hiring.webp 1x, assets/images/read-me/hiring@2x.webp 2x, assets/images/read-me/hiring@3x.webp 3x, assets/images/read-me/hiring@4x.webp 4x"
+											data-srcset="assets/images/read-me/hiring-a-designer/preview.webp 1x, assets/images/read-me/hiring-a-designer/preview@2x.webp 2x, assets/images/read-me/hiring-a-designer/preview@3x.webp 3x, assets/images/read-me/hiring-a-designer/preview@4x.webp 4x"
 											type="image/webp">
 										<img class="lazyload"
 											src="data:image/gif;base64,R0lGODlhcgEEAYAAAP///wAAACH5BAEAAAEALAAAAAByAQQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8a3jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fuHwUAADs="
-											data-src="assets/images/read-me/hiring.png"
-											data-srcset="assets/images/read-me/hiring@2x.png 2x, assets/images/read-me/hiring@3x.png 3x, assets/images/read-me/hiring@4x.png 4x"
+											data-src="assets/images/read-me/hiring-a-designer/preview.png"
+											data-srcset="assets/images/read-me/hiring-a-designer/preview@2x.png 2x, assets/images/read-me/hiring-a-designer/preview@3x.png 3x, assets/images/read-me/hiring-a-designer/preview@4x.png 4x"
 											width="370" height="260" alt="Hiring a designer">
 									</picture>
 									<time class="article__data" datetime="2020-06-03">
@@ -668,7 +670,7 @@
 									consequat.
 								</p>
 								<div class="article__buttons">
-									<button class="article__read-more btn btn--fz14 btn--p20x12 hoverEffect">
+									<button class="article__read-more btn btn--fz14 btn--p20x12 hoverEffect" data-hystmodal="#post">
 										<span>
 											READ MORE
 										</span>
@@ -677,17 +679,17 @@
 							</article>
 						</li><!-- /.read-me__articles-item -->
 						<li class="read-me__articles-item" hidden>
-							<article class="read-me__article article">
+							<article class="read-me__article article" data-adress="logos" data-width="700" data-height="349">
 								<div class="article__header">
 									<picture class="article__img">
 										<source class="lazyload"
 											srcset="data:image/gif;base64,R0lGODlhcgEEAYAAAP///wAAACH5BAEAAAEALAAAAAByAQQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8a3jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fuHwUAADs="
-											data-srcset="assets/images/read-me/logo.webp 1x, assets/images/read-me/logo@2x.webp 2x, assets/images/read-me/logo@3x.webp 3x, assets/images/read-me/logo@4x.webp 4x"
+											data-srcset="assets/images/read-me/logos/preview.webp 1x, assets/images/read-me/logos/preview@2x.webp 2x, assets/images/read-me/logos/preview@3x.webp 3x, assets/images/read-me/logos/preview@4x.webp 4x"
 											type="image/webp">
 										<img class="lazyload"
 											src="data:image/gif;base64,R0lGODlhcgEEAYAAAP///wAAACH5BAEAAAEALAAAAAByAQQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8a3jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fuHwUAADs="
-											data-src="assets/images/read-me/logo.jpg"
-											data-srcset="assets/images/read-me/logo@2x.jpg 2x, assets/images/read-me/logo@3x.jpg 3x, assets/images/read-me/logo@4x.jpg 4x"
+											data-src="assets/images/read-me/logos/preview.png"
+											data-srcset="assets/images/read-me/logos/preview@2x.png 2x, assets/images/read-me/logos/preview@3x.png 3x, assets/images/read-me/logos/preview@4x.png 4x"
 											width="370" height="260" alt="Logos">
 									</picture>
 									<time class="article__data" datetime="2020-05-25">
@@ -708,7 +710,7 @@
 									consequat.
 								</p>
 								<div class="article__buttons">
-									<button class="article__read-more btn btn--fz14 btn--p20x12 hoverEffect">
+									<button class="article__read-more btn btn--fz14 btn--p20x12 hoverEffect" data-hystmodal="#post">
 										<span>
 											READ MORE
 										</span>
@@ -717,17 +719,17 @@
 							</article>
 						</li><!-- /.read-me__articles-item -->
 						<li class="read-me__articles-item" hidden>
-							<article class="read-me__article article">
+							<article class="read-me__article article" data-adress="my-work-place" data-width="700" data-height="394">
 								<div class="article__header">
 									<picture class="article__img">
 										<source class="lazyload"
 											srcset="data:image/gif;base64,R0lGODlhcgEEAYAAAP///wAAACH5BAEAAAEALAAAAAByAQQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8a3jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fuHwUAADs="
-											data-srcset="assets/images/read-me/place.webp 1x, assets/images/read-me/place@2x.webp 2x, assets/images/read-me/place@3x.webp 3x, assets/images/read-me/place@4x.webp 4x"
+											data-srcset="assets/images/read-me/my-work-place/preview.webp 1x, assets/images/read-me/my-work-place/preview@2x.webp 2x, assets/images/read-me/my-work-place/preview@3x.webp 3x, assets/images/read-me/my-work-place/preview@4x.webp 4x"
 											type="image/webp">
 										<img class="lazyload"
 											src="data:image/gif;base64,R0lGODlhcgEEAYAAAP///wAAACH5BAEAAAEALAAAAAByAQQBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8a3jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fuHwUAADs="
-											data-src="assets/images/read-me/place.jpg"
-											data-srcset="assets/images/read-me/place@2x.jpg 2x, assets/images/read-me/place@3x.jpg 3x, assets/images/read-me/place@4x.jpg 4x"
+											data-src="assets/images/read-me/my-work-place/preview.png"
+											data-srcset="assets/images/read-me/my-work-place/preview@2x.png 2x, assets/images/read-me/my-work-place/preview@3x.png 3x, assets/images/read-me/my-work-place/preview@4x.png 4x"
 											width="370" height="260" alt="my work place">
 									</picture>
 									<time class="article__data" datetime="2020-06-10">
@@ -748,7 +750,7 @@
 									consequat.
 								</p>
 								<div class="article__buttons">
-									<button class="article__read-more btn btn--fz14 btn--p20x12 hoverEffect">
+									<button class="article__read-more btn btn--fz14 btn--p20x12 hoverEffect" data-hystmodal="#post">
 										<span>
 											READ MORE
 										</span>
@@ -757,9 +759,9 @@
 							</article>
 						</li><!-- /.read-me__articles-item -->
 					</ul><!-- /.read-me__articles-list -->
-					<a href="#" class="read-me__show-more hoverEffect">
+					<button class="read-me__show-more hoverEffect">
 						See more posts
-					</a>
+					</button>
 				</div><!-- /.read-me__inner -->
 			</div>
 		
@@ -1113,158 +1115,113 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>		<div class="hystmodal" id="post" aria-hidden="true">
+			<div class="hystmodal__wrap">
+				<div class="hystmodal__window hystmodal__window--post" role="dialog" aria-modal="true">
+					<button class="window__close close" data-hystclose class="hystmodal__close">
+						<svg class="close__icon">
+							<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
+						</svg>
+					</button>
 		
 		
-		<!-- 
+					<div class="modal-post">
 		
-		<picture class="slide__img">
-		
-		<source class="lazyload"
-		srcset=""
-		data-srcset="assets/images/3Dicons/1-320.webp 1x, assets/images/3Dicons/1-320@2x.webp 2x, assets/images/3Dicons/1-320@3x.webp 3x, assets/images/3Dicons/1-320@4x.webp 4x"
-		type="image/webp" media="(max-width: 360px)">
-		<source class="lazyload"
-		srcset=""
-		data-src="assets/images/3Dicons/1-320.png"
-		data-srcset="assets/images/3Dicons/1-320@2x.png 2x, assets/images/3Dicons/1-320@3x.png 3x, assets/images/3Dicons/1-320@4x.png 4x"
-		type="image/png" media="(max-width: 360px)">
-		
-		<source class="lazyload"
-		srcset=""
-		data-srcset="assets/images/3Dicons/1-410.webp 1x, assets/images/3Dicons/1-410@2x.webp 2x, assets/images/3Dicons/1-410@3x.webp 3x, assets/images/3Dicons/1-410@4x.webp 4x"
-		type="image/webp" media="(max-width: 450px)">
-		<source class="lazyload"
-		srcset=""
-		data-src="assets/images/3Dicons/1-410.png"
-		data-srcset="assets/images/3Dicons/1-410@2x.png 2x, assets/images/3Dicons/1-410@3x.png 3x, assets/images/3Dicons/1-410@4x.png 4x"
-		type="image/png" media="(max-width: 450px)">
-		
-		<source class="lazyload"
-		srcset=""
-		data-srcset="assets/images/3Dicons/1-560.webp 1x, assets/images/3Dicons/1-560@2x.webp 2x, assets/images/3Dicons/1-560@3x.webp 3x, assets/images/3Dicons/1-560@4x.webp 4x"
-		type="image/webp" media="(max-width: 600px)">
-		<source class="lazyload"
-		srcset=""
-		data-src="assets/images/3Dicons/1-560.png"
-		data-srcset="assets/images/3Dicons/1-560@2x.png 2x, assets/images/3Dicons/1-560@3x.png 3x, assets/images/3Dicons/1-560@4x.png 4x"
-		type="image/png" media="(max-width: 600px)">
-		
-		<source class="lazyload"
-		srcset=""
-		data-srcset="assets/images/3Dicons/1-700.webp 1x, assets/images/3Dicons/1-700@2x.webp 2x, assets/images/3Dicons/1-700@3x.webp 3x, assets/images/3Dicons/1-700@4x.webp 4x"
-		type="image/webp" media="(max-width: 850px)">
-		<source class="lazyload"
-		srcset=""
-		data-src="assets/images/3Dicons/1-700.png"
-		data-srcset="assets/images/3Dicons/1-700@2x.png 2x, assets/images/3Dicons/1-700@3x.png 3x, assets/images/3Dicons/1-700@4x.png 4x"
-		type="image/png" media="(max-width: 850px)">
-		
-		<source class="lazyload"
-		srcset=""
-		data-srcset="assets/images/3Dicons/1-900.webp 1x, assets/images/3Dicons/1-900@2x.webp 2x, assets/images/3Dicons/1-900@3x.webp 3x, assets/images/3Dicons/1-900@4x.webp 4x"
-		type="image/webp" media="(max-width:1050px)">
-		<source class="lazyload"
-		srcset=""
-		data-src="assets/images/3Dicons/1-900.png"
-		data-srcset="assets/images/3Dicons/1-900@2x.png 2x, assets/images/3Dicons/1-900@3x.png 3x, assets/images/3Dicons/1-900@4x.png 4x"
-		type="image/png" media="(max-width: 1050px)">
-		
-		<source class="lazyload"
-		srcset=""
-		data-srcset="assets/images/3Dicons/1-1170.webp 1x, assets/images/3Dicons/1-1170@2x.webp 2x, assets/images/3Dicons/1-1170@3x.webp 3x, assets/images/3Dicons/1-1170@4x.webp 4x"
-		type="image/webp">
-		<img class="lazyload"
-		src=""
-		data-src="assets/images/3Dicons/1-1170.png"
-		data-srcset="assets/images/3Dicons/1-1170@2x.png 2x, assets/images/3Dicons/1-1170@3x.png 3x, assets/images/3Dicons/1-1170@4x.png 4x"
-		width="1170" height="600" alt="img">
-		</picture> -->	</main>
+						<div class="modal-post__content">
+							<h2 class="modal-post__title">
+								PROJECT TITLE
+							</h2>
+							<div class="modal-post__info">
+								<div class="modal-post__info-item">
+									CATEGORY
+								</div>
+								<time class="modal-post__info-item" datetime="2020">
+									2020
+								</time>
+							</div>
+							<div class="modal-post__img-wrap">
+								<picture class="modal-post__img">
+									<source srcset="https://place-hold.it/700x300/333333" type="image/webp">
+									<img src="https://place-hold.it/700x300/333333" srcset="https://place-hold.it/700x300/333333"
+										width="700" height="300" alt="img">
+								</picture>
+							</div>
+							<p class="modal-post__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus.
+								Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem,
+								elementum
+								consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo.
+								Praesent
+								dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus
+								orci
+								luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+								sem.
+								Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+								nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse
+								placerat, quam vitae ullamcorper
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	</main>
 
 	<footer class="footer">
 		<div class="footer__container container padding padding_right-left">
 			<div class="footer__inner">
-				<div class="footer__left">
-					<small class="footer__small">
-						&copy; 2018 UI43 - Free Templates
-					</small>
-					<ul class="footer__social social social--mb0">
-						<li class="social__item">
-							<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
-								title="behance" target="_blank">
-								<svg class="social__icon social__icon--20x20">
-									<use xlink:href="assets/images/icons/behanceIcon.svg#behance"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
-								title="dribbble" target="_blank">
-								<svg class="social__icon social__icon--20x20">
-									<use xlink:href="assets/images/icons/dribbbleIcon.svg#dribbble"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
-								title="linkedin" target="_blank">
-								<svg class="social__icon social__icon--20x20">
-									<use xlink:href="assets/images/icons/linkedinIcon.svg#linkedin"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
-								title="facebook" target="_blank">
-								<svg class="social__icon social__icon--20x20">
-									<use xlink:href="assets/images/icons/facebookIcon.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
-								title="instagram" target="_blank">
-								<svg class="social__icon social__icon--20x20">
-									<use xlink:href="assets/images/icons/instagramIcon.svg#instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
-								title="twitter" target="_blank">
-								<svg class="social__icon social__icon--20x20">
-									<use xlink:href="assets/images/icons/twitterIcon.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer__right">
-					<ul class="footer__nav footer-nav">
-						<li class="footer-nav__item">
-							<a href="#works" class="footer-nav__link hoverEffect">WORK</a>
-						</li>
-						<li class="footer-nav__item">
-							<a href="#about" class="footer-nav__link hoverEffect">ABOUT ME</a>
-						</li>
-						<li class="footer-nav__item">
-							<a href="#blog" class="footer-nav__link hoverEffect">BLOG</a>
-						</li>
-						<li class="footer-nav__item">
-							<a href="#intro" class="footer-nav__link hoverEffect">CONTACT</a>
-						</li>
-						<li class="footer-nav__item">
-							<button
-								class="footer-nav__link btn btn--p20x12 btn--fz14 btn--white btn--fw300 btn--br1 hire-me hoverEffect"
-								data-hystmodal="#contact">
-								<span>
-									HIRE
-									ME
-								</span>
-							</button>
-						</li>
-					</ul>
-				</div>
+				<small class="footer__small">
+					&copy; 2018 UI43 - Free Templates
+				</small>
+				<ul class="footer__social social social--m08">
+					<li class="social__item">
+						<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
+							title="behance" target="_blank">
+							<svg class="social__icon social__icon--20x20">
+								<use xlink:href="assets/images/icons/behanceIcon.svg#behance"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
+							title="dribbble" target="_blank">
+							<svg class="social__icon social__icon--20x20">
+								<use xlink:href="assets/images/icons/dribbbleIcon.svg#dribbble"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
+							title="linkedin" target="_blank">
+							<svg class="social__icon social__icon--20x20">
+								<use xlink:href="assets/images/icons/linkedinIcon.svg#linkedin"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
+							title="facebook" target="_blank">
+							<svg class="social__icon social__icon--20x20">
+								<use xlink:href="assets/images/icons/facebookIcon.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
+							title="instagram" target="_blank">
+							<svg class="social__icon social__icon--20x20">
+								<use xlink:href="assets/images/icons/instagramIcon.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link social__link_footer hoverEffect" rel="nofollow norefferer nooppener"
+							title="twitter" target="_blank">
+							<svg class="social__icon social__icon--20x20">
+								<use xlink:href="assets/images/icons/twitterIcon.svg#twitter"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</footer>	<!-- 
