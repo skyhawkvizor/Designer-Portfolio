@@ -53,9 +53,10 @@
 					<a href="#about" class="nav__link hoverEffect">ABOUT ME</a>
 					<a href="#opinions" class="nav__link hoverEffect">Opinions</a>
 					<a href="#blog" class="nav__link hoverEffect">BLOG</a>
-					<button class="nav__link btn btn--w130 btn--p30x10 btn--fz14 hire-me hoverEffect" data-hystmodal="#contact">
+					<a href="#call" class="nav__link btn btn--w130 btn--p30x10 btn--fz14 hire-me hoverEffect pl"
+						data-hystmodal="#contact">
 						<span>HIRE ME</span>
-					</button>
+					</a>
 				</nav>
 				<div class="header__burger burger">
 					<span></span>
@@ -64,7 +65,302 @@
 	
 		</div>
 	</header>	<main class="main">
-		<section class="intro" id="intro">
+		<div class="popup popup-call">
+			<div class="popup-table table">
+				<div class="cell">
+					<div class="popup-content">
+						<div class="popup-close"></div>
+						<div class="modal-contact">
+							<div class="modal-contact__left">
+								<h2 class="modal-contact__title">
+									LET'S TALK!
+								</h2>
+								<div class="modal-contact__sub-title">
+									CALL ME OR SEND ME A REQUEST
+								</div>
+								<ul class="modal-contact__contacts contacts">
+									<li class="contacts__item">
+										<svg class="contacts__icon">
+											<use xlink:href="assets/images/icons/phone.svg#phone"></use>
+										</svg>
+										<a href="tel:+12001003000" class="contacts__link hoverEffect">
+											(200) 100 3000
+										</a>
+									</li>
+									<li class="contacts__item">
+										<svg class="contacts__icon">
+											<use xlink:href="assets/images/icons/letter.svg#letter"></use>
+										</svg>
+										<a href="mailto:designer@ui43.com" class="contacts__link hoverEffect">
+											designer@ui43.com
+										</a>
+									</li>
+								</ul>
+								<form action="#" method="POST" class="modal-contact__form contact-form">
+									<label class="contact-form__label" for="mail">
+										Adress e-mail
+										<input class="contact-form__input" placeholder="Adress e-mail" type="email" id="mail">
+									</label>
+									<label class="contact-form__label" for="text">
+										Request
+										<textarea class="contact-form__input contact-form__input--textarea"
+											placeholder="Type your request..." id="text"></textarea>
+									</label>
+									<!-- <button class="contact-form__submit btn btn--fz16 btn--p47x16 btn--black btn--fw400"
+										type="submit">HIRE
+										ME</button> -->
+									<div class="contact-form__buttons">
+										<button
+											class="contact-form__submit btn btn--fz16 btn--p47x16  btn--black btn--fw400 hire-me hoverEffect"
+											data-hystmodal="#contact">
+											<span>
+												HIRE
+												ME
+											</span>
+										</button>
+									</div>
+		
+		
+								</form>
+							</div>
+							<div class="modal-contact__right" data-da="modal-contact__left, 2, 650">
+								<picture class="modal-contact__img">
+									<source class="lazyload"
+										srcset="data:image/gif;base64,R0lGODlhzAEsAYAAAP///wAAACH5BAEAAAEALAAAAADMASwBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fwc+/v/D2CAAg5IYIEGHohgggouyGCDDj4IoXEFAAA7"
+										data-srcset="assets/images/modal-contact/460x300.webp 1x, assets/images/modal-contact/460x300@2x.webp 2x, assets/images/modal-contact/460x300@3x.webp 3x, assets/images/modal-contact/460x300@4x.webp 4x"
+										type="image/webp" media="(max-width:650px)">
+									<source class="lazyload"
+										srcset="data:image/gif;base64,R0lGODlhzAEsAYAAAP///wAAACH5BAEAAAEALAAAAADMASwBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fwc+/v/D2CAAg5IYIEGHohgggouyGCDDj4IoXEFAAA7"
+										data-srcset="assets/images/modal-contact/460x300.webp 1x, assets/images/modal-contact/460x300@2x.webp 2x, assets/images/modal-contact/460x300@3x.webp 3x, assets/images/modal-contact/460x300@4x.webp 4x"
+										type="image/png" media="(max-width:650px)">
+									<source class="lazyload"
+										srcset="data:image/gif;base64,R0lGODlhwgG8AoAAAP///wAAACH5BAEAAAEALAAAAADCAbwCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHotubLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/Mcce3FAAAOw=="
+										data-srcset="assets/images/modal-contact/450x700.webp 1x, assets/images/modal-contact/450x700@2x.webp 2x, assets/images/modal-contact/450x700@3x.webp 3x, assets/images/modal-contact/450x700@4x.webp 4x"
+										type="image/webp">
+									<img class="lazyload"
+										src="data:image/gif;base64,R0lGODlhwgG8AoAAAP///wAAACH5BAEAAAEALAAAAADCAbwCAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fz++/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLspoo44+Cmmkkk5KaaWWXopppppuymmnnn4Kaqiijkpqqaaeimqqqq7KaquuvgprrLLOSmuttt6Ka6667sprr77+Cmywwg5LbLHGHotubLLKLstss84+C2200k5LbbXWXottttpuy2233n4Lbrjijktuueaei2666q7LbrvuvgtvvPLOS2+99t6Lb7767stvv/7+C3DAAg9McMEGH4xwwgovzHDDDj8MccQST0xxxRZfjHHGGm/Mcce3FAAAOw=="
+										data-src="assets/images/modal-contact/450x700.png"
+										data-srcset="assets/images/modal-contact/450x700@2x.png 2x, assets/images/modal-contact/450x700@3x.png 3x, assets/images/modal-contact/450x700@4x.png 4x"
+										width="450" height="700" alt="img">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="popup popup-video">
+			<div class="popup-table table">
+				<div class="cell">
+					<div class="popup-close"></div>
+					<div class="popup-video__value"></div>
+				</div>
+			</div>
+		</div> -->
+		
+		<div class="popup popup-resume">
+			<div class="popup-table table">
+				<div class="cell">
+					<div class="popup-content">
+						<div class="popup-close"></div>
+						<div class="modal-resume">
+							<h2 class="modal-resume__title">
+								RESUME
+							</h2>
+							<div class="modal-resume__buttons">
+								<button class="modal-resume__btn btn btn--br1 btn--fz12 btn--p16x12 btn--w150 btn--fw400 hoverEffect">
+									<span>
+										DOWNLOAD PDF
+									</span>
+								</button>
+								<button class="modal-resume__btn btn btn--br1 btn--fz12 btn--p16x12 btn--w150 btn--fw400 hoverEffect">
+									<span>
+										PRINT
+									</span>
+								</button>
+							</div>
+							<div class="modal-resume__resume resume">
+								<div class="resume__left">
+									<section class="resume__theme theme">
+										<h3 class="theme__title">
+											EXPERIENCE
+										</h3>
+										<div class="theme__data">
+											2017 -
+											<span class="theme__data-accent">Present</span>
+										</div>
+										<div class="theme__secondary-title">
+											Freelancer
+										</div>
+										<div class="theme__sub-title">
+											Art Director
+										</div>
+										<p class="theme__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
+											ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
+											condimentum.
+										</p>
+										<div class="theme__data">
+											2016-2017
+										</div>
+										<div class="theme__secondary-title">
+											The Best Agency
+										</div>
+										<div class="theme__sub-title">
+											Art Director
+										</div>
+										<p class="theme__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
+											ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
+											condimentum.
+										</p>
+										<div class="theme__data">
+											2014 - 2016
+										</div>
+										<div class="theme__secondary-title">
+											Better Agency
+										</div>
+										<div class="theme__sub-title">
+											Senior UI/UX Designer
+										</div>
+										<p class="theme__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
+											ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
+											condimentum.
+										</p>
+										<div class="theme__data">
+											2012 - 2014
+										</div>
+										<div class="theme__secondary-title">
+											Good Agency
+										</div>
+										<div class="theme__sub-title">
+											UI/UX Designer
+										</div>
+										<p class="theme__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
+											ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
+											condimentum.
+										</p>
+									</section><!-- /.theme -->
+								</div><!-- /.resume__left -->
+								<div class="resume__right">
+									<section class="resume__theme theme">
+										<h3 class="theme__title">
+											EDUCATION
+										</h3>
+										<div class="theme__data">
+											2005 - 2010
+										</div>
+										<div class="theme__secondary-title">
+											UI/UX Design
+										</div>
+										<div class="theme__sub-title theme__sub-title--non-italic">
+											LA University, USA
+										</div>
+										<div class="theme__data">
+											2002 - 2005
+										</div>
+										<div class="theme__secondary-title">
+											UI/UX Design
+										</div>
+										<div class="theme__sub-title theme__sub-title--non-italic">
+											LA Collage of Art, USA
+										</div>
+									</section><!-- /.theme -->
+									<section class="resume__theme theme">
+										<h3 class="theme__title">
+											SKILLS
+										</h3>
+										<ul class="theme__list">
+											<li class="theme__list-item progress">
+												UI/UX Design
+												<span class="progress__bar progress__bar--95"></span>
+											</li>
+											<li class="theme__list-item progress">
+												Illustrator
+												<span class="progress__bar progress__bar--75"></span>
+											</li>
+											<li class="theme__list-item progress">
+												Photoshop
+												<span class="progress__bar progress__bar--85"></span>
+											</li>
+											<li class="theme__list-item progress">
+												Sketch
+												<span class="progress__bar progress__bar--90"></span>
+											</li>
+										</ul>
+									</section><!-- /.theme -->
+									<section class="resume__theme theme">
+										<h3 class="theme__title">
+											AWARDS
+										</h3>
+										<div class="theme__table">
+											<div class="theme__table-row">
+												<div class="theme__table-col">
+													<div class="theme__data theme__data--mt0">
+														2016
+													</div>
+												</div><!-- /.theme__table-col -->
+												<div class="theme__table-col">
+													<div
+														class="theme__secondary-title theme__secondary-title--mt0 theme__secondary-title--upper">
+														THE BEST APP INTERFACE
+													</div>
+													<div class="theme__sub-title theme__sub-title--non-italic">
+														UI/UX Magazine
+													</div>
+													<p class="theme__text">
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non
+													</p>
+												</div><!-- /.theme__table-col -->
+											</div><!-- /.theme__table-row -->
+											<div class="theme__table-row">
+												<div class="theme__table-col">
+													<div class="theme__data theme__data--mt0">
+														2016
+													</div>
+												</div><!-- /.theme__table-col -->
+												<div class="theme__table-col">
+													<div
+														class="theme__secondary-title theme__secondary-title--mt0 theme__secondary-title--upper">
+														THE BEST WEBSITE
+													</div>
+													<div class="theme__sub-title theme__sub-title--non-italic">
+														UI/UX Magazine
+													</div>
+													<p class="theme__text">
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non
+													</p>
+												</div><!-- /.theme__table-col -->
+											</div><!-- /.theme__table-row -->
+										</div><!-- /.theme__table -->
+									</section><!-- /.theme -->
+								</div><!-- /.resume__right -->
+							</div><!-- /.resume -->
+							<div class="modal-resume__buttons modal-resume__buttons_bottom">
+								<button
+									class="modal-resume__hire-me btn btn--fz16 btn--p47x16  btn--black btn--fw400 hire-me hoverEffect"
+									data-hystmodal="#contact">
+									<span>
+										HIRE
+										ME
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="popup popup-video">
+			<div class="popup-table table">
+				<div class="cell">
+					<div class="popup-close"></div>
+					<div class="popup-video__value"></div>
+				</div>
+			</div>
+		</div> -->		<section class="intro" id="intro">
 			<div class="intro__container container padding">
 				<div class="intro__inner">
 					<div class="intro__left">
@@ -130,12 +426,12 @@
 									hire me
 								</span>
 							</button>
-							<button class="intro__btn btn btn--fz16 btn--p30x17 btn--w200 show-resume hoverEffect"
+							<a href="#resume" class="intro__btn btn btn--fz16 btn--p30x17 btn--w200 show-resume hoverEffect pl"
 								data-hystmodal="#resume">
 								<span>
 									see my resume
 								</span>
-							</button>
+							</a>
 						</div>
 					</div><!-- /.intro__left  -->
 					<div class="intro__right">
@@ -765,203 +1061,204 @@
 				</div><!-- /.read-me__inner -->
 			</div>
 		
-		</section><!-- /.read-me -->		<div class="hystmodal" id="resume" aria-hidden="true">
-			<div class="hystmodal__wrap">
-				<div class="hystmodal__window hystmodal__window--resume" role="dialog" aria-modal="true">
-					<button class="window__close close" data-hystclose class="hystmodal__close">
-						<svg class="close__icon">
-							<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
-						</svg>
+		</section><!-- /.read-me -->		<!-- <div class="hystmodal" id="resume" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="hystmodal__window hystmodal__window--resume" role="dialog" aria-modal="true">
+			<button class="window__close close" data-hystclose class="hystmodal__close">
+				<svg class="close__icon">
+					<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
+				</svg>
+			</button>
+			<div class="modal-resume">
+				<h2 class="modal-resume__title">
+					RESUME
+				</h2>
+				<div class="modal-resume__buttons">
+					<button class="modal-resume__btn btn btn--br1 btn--fz12 btn--p16x12 btn--w150 btn--fw400 hoverEffect">
+						<span>
+							DOWNLOAD PDF
+						</span>
 					</button>
-					<div class="modal-resume">
-						<h2 class="modal-resume__title">
-							RESUME
-						</h2>
-						<div class="modal-resume__buttons">
-							<button class="modal-resume__btn btn btn--br1 btn--fz12 btn--p16x12 btn--w150 btn--fw400 hoverEffect">
-								<span>
-									DOWNLOAD PDF
-								</span>
-							</button>
-							<button class="modal-resume__btn btn btn--br1 btn--fz12 btn--p16x12 btn--w150 btn--fw400 hoverEffect">
-								<span>
-									PRINT
-								</span>
-							</button>
-						</div>
-						<div class="modal-resume__resume resume">
-							<div class="resume__left">
-								<section class="resume__theme theme">
-									<h3 class="theme__title">
-										EXPERIENCE
-									</h3>
-									<div class="theme__data">
-										2017 -
-										<span class="theme__data-accent">Present</span>
-									</div>
-									<div class="theme__secondary-title">
-										Freelancer
-									</div>
-									<div class="theme__sub-title">
-										Art Director
-									</div>
-									<p class="theme__text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
-										ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
-										condimentum.
-									</p>
-									<div class="theme__data">
-										2016-2017
-									</div>
-									<div class="theme__secondary-title">
-										The Best Agency
-									</div>
-									<div class="theme__sub-title">
-										Art Director
-									</div>
-									<p class="theme__text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
-										ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
-										condimentum.
-									</p>
-									<div class="theme__data">
-										2014 - 2016
-									</div>
-									<div class="theme__secondary-title">
-										Better Agency
-									</div>
-									<div class="theme__sub-title">
-										Senior UI/UX Designer
-									</div>
-									<p class="theme__text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
-										ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
-										condimentum.
-									</p>
-									<div class="theme__data">
-										2012 - 2014
-									</div>
-									<div class="theme__secondary-title">
-										Good Agency
-									</div>
-									<div class="theme__sub-title">
-										UI/UX Designer
-									</div>
-									<p class="theme__text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
-										ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
-										condimentum.
-									</p>
-								</section><!-- /.theme -->
-							</div><!-- /.resume__left -->
-							<div class="resume__right">
-								<section class="resume__theme theme">
-									<h3 class="theme__title">
-										EDUCATION
-									</h3>
-									<div class="theme__data">
-										2005 - 2010
-									</div>
-									<div class="theme__secondary-title">
-										UI/UX Design
-									</div>
-									<div class="theme__sub-title theme__sub-title--non-italic">
-										LA University, USA
-									</div>
-									<div class="theme__data">
-										2002 - 2005
-									</div>
-									<div class="theme__secondary-title">
-										UI/UX Design
-									</div>
-									<div class="theme__sub-title theme__sub-title--non-italic">
-										LA Collage of Art, USA
-									</div>
-								</section><!-- /.theme -->
-								<section class="resume__theme theme">
-									<h3 class="theme__title">
-										SKILLS
-									</h3>
-									<ul class="theme__list">
-										<li class="theme__list-item progress">
-											UI/UX Design
-											<span class="progress__bar progress__bar--95"></span>
-										</li>
-										<li class="theme__list-item progress">
-											Illustrator
-											<span class="progress__bar progress__bar--75"></span>
-										</li>
-										<li class="theme__list-item progress">
-											Photoshop
-											<span class="progress__bar progress__bar--85"></span>
-										</li>
-										<li class="theme__list-item progress">
-											Sketch
-											<span class="progress__bar progress__bar--90"></span>
-										</li>
-									</ul>
-								</section><!-- /.theme -->
-								<section class="resume__theme theme">
-									<h3 class="theme__title">
-										AWARDS
-									</h3>
-									<div class="theme__table">
-										<div class="theme__table-row">
-											<div class="theme__table-col">
-												<div class="theme__data theme__data--mt0">
-													2016
-												</div>
-											</div><!-- /.theme__table-col -->
-											<div class="theme__table-col">
-												<div
-													class="theme__secondary-title theme__secondary-title--mt0 theme__secondary-title--upper">
-													THE BEST APP INTERFACE
-												</div>
-												<div class="theme__sub-title theme__sub-title--non-italic">
-													UI/UX Magazine
-												</div>
-												<p class="theme__text">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non
-												</p>
-											</div><!-- /.theme__table-col -->
-										</div><!-- /.theme__table-row -->
-										<div class="theme__table-row">
-											<div class="theme__table-col">
-												<div class="theme__data theme__data--mt0">
-													2016
-												</div>
-											</div><!-- /.theme__table-col -->
-											<div class="theme__table-col">
-												<div
-													class="theme__secondary-title theme__secondary-title--mt0 theme__secondary-title--upper">
-													THE BEST WEBSITE
-												</div>
-												<div class="theme__sub-title theme__sub-title--non-italic">
-													UI/UX Magazine
-												</div>
-												<p class="theme__text">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non
-												</p>
-											</div><!-- /.theme__table-col -->
-										</div><!-- /.theme__table-row -->
-									</div><!-- /.theme__table -->
-								</section><!-- /.theme -->
-							</div><!-- /.resume__right -->
-						</div><!-- /.resume -->
-						<div class="modal-resume__buttons modal-resume__buttons_bottom">
-							<button
-								class="modal-resume__hire-me btn btn--fz16 btn--p47x16  btn--black btn--fw400 hire-me hoverEffect"
-								data-hystmodal="#contact">
-								<span>
-									HIRE
-									ME
-								</span>
-							</button>
-						</div>
-					</div>
+					<button class="modal-resume__btn btn btn--br1 btn--fz12 btn--p16x12 btn--w150 btn--fw400 hoverEffect">
+						<span>
+							PRINT
+						</span>
+					</button>
+				</div>
+				<div class="modal-resume__resume resume">
+					<div class="resume__left">
+						<section class="resume__theme theme">
+							<h3 class="theme__title">
+								EXPERIENCE
+							</h3>
+							<div class="theme__data">
+								2017 -
+								<span class="theme__data-accent">Present</span>
+							</div>
+							<div class="theme__secondary-title">
+								Freelancer
+							</div>
+							<div class="theme__sub-title">
+								Art Director
+							</div>
+							<p class="theme__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
+								ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
+								condimentum.
+							</p>
+							<div class="theme__data">
+								2016-2017
+							</div>
+							<div class="theme__secondary-title">
+								The Best Agency
+							</div>
+							<div class="theme__sub-title">
+								Art Director
+							</div>
+							<p class="theme__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
+								ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
+								condimentum.
+							</p>
+							<div class="theme__data">
+								2014 - 2016
+							</div>
+							<div class="theme__secondary-title">
+								Better Agency
+							</div>
+							<div class="theme__sub-title">
+								Senior UI/UX Designer
+							</div>
+							<p class="theme__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
+								ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
+								condimentum.
+							</p>
+							<div class="theme__data">
+								2012 - 2014
+							</div>
+							<div class="theme__secondary-title">
+								Good Agency
+							</div>
+							<div class="theme__sub-title">
+								UI/UX Designer
+							</div>
+							<p class="theme__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non tempor
+								ullamcorper. Pellentesque cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut
+								condimentum.
+							</p>
+						</section><!-- /.theme -->
+					</div><!-- /.resume__left -->
+					<div class="resume__right">
+						<section class="resume__theme theme">
+							<h3 class="theme__title">
+								EDUCATION
+							</h3>
+							<div class="theme__data">
+								2005 - 2010
+							</div>
+							<div class="theme__secondary-title">
+								UI/UX Design
+							</div>
+							<div class="theme__sub-title theme__sub-title--non-italic">
+								LA University, USA
+							</div>
+							<div class="theme__data">
+								2002 - 2005
+							</div>
+							<div class="theme__secondary-title">
+								UI/UX Design
+							</div>
+							<div class="theme__sub-title theme__sub-title--non-italic">
+								LA Collage of Art, USA
+							</div>
+						</section><!-- /.theme -->
+						<section class="resume__theme theme">
+							<h3 class="theme__title">
+								SKILLS
+							</h3>
+							<ul class="theme__list">
+								<li class="theme__list-item progress">
+									UI/UX Design
+									<span class="progress__bar progress__bar--95"></span>
+								</li>
+								<li class="theme__list-item progress">
+									Illustrator
+									<span class="progress__bar progress__bar--75"></span>
+								</li>
+								<li class="theme__list-item progress">
+									Photoshop
+									<span class="progress__bar progress__bar--85"></span>
+								</li>
+								<li class="theme__list-item progress">
+									Sketch
+									<span class="progress__bar progress__bar--90"></span>
+								</li>
+							</ul>
+						</section><!-- /.theme -->
+						<section class="resume__theme theme">
+							<h3 class="theme__title">
+								AWARDS
+							</h3>
+							<div class="theme__table">
+								<div class="theme__table-row">
+									<div class="theme__table-col">
+										<div class="theme__data theme__data--mt0">
+											2016
+										</div>
+									</div><!-- /.theme__table-col -->
+									<div class="theme__table-col">
+										<div
+											class="theme__secondary-title theme__secondary-title--mt0 theme__secondary-title--upper">
+											THE BEST APP INTERFACE
+										</div>
+										<div class="theme__sub-title theme__sub-title--non-italic">
+											UI/UX Magazine
+										</div>
+										<p class="theme__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non
+										</p>
+									</div><!-- /.theme__table-col -->
+								</div><!-- /.theme__table-row -->
+								<div class="theme__table-row">
+									<div class="theme__table-col">
+										<div class="theme__data theme__data--mt0">
+											2016
+										</div>
+									</div><!-- /.theme__table-col -->
+									<div class="theme__table-col">
+										<div
+											class="theme__secondary-title theme__secondary-title--mt0 theme__secondary-title--upper">
+											THE BEST WEBSITE
+										</div>
+										<div class="theme__sub-title theme__sub-title--non-italic">
+											UI/UX Magazine
+										</div>
+										<p class="theme__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non
+										</p>
+									</div><!-- /.theme__table-col -->
+								</div><!-- /.theme__table-row -->
+							</div><!-- /.theme__table -->
+						</section><!-- /.theme -->
+					</div><!-- /.resume__right -->
+				</div><!-- /.resume -->
+				<div class="modal-resume__buttons modal-resume__buttons_bottom">
+					<button
+						class="modal-resume__hire-me btn btn--fz16 btn--p47x16  btn--black btn--fw400 hire-me hoverEffect"
+						data-hystmodal="#contact">
+						<span>
+							HIRE
+							ME
+						</span>
+					</button>
 				</div>
 			</div>
-		</div>		<div class="hystmodal" id="contact" aria-hidden="true">
+		</div>
+	</div>
+</div>
+		<div class="hystmodal" id="contact" aria-hidden="true">
 			<div class="hystmodal__wrap">
 				<div class="hystmodal__window hystmodal__window--contact" role="dialog" aria-modal="true">
 					<button class="window__close close" data-hystclose class="hystmodal__close">
@@ -1116,59 +1413,60 @@
 				</div>
 			</div>
 		</div>		<div class="hystmodal" id="post" aria-hidden="true">
-			<div class="hystmodal__wrap">
-				<div class="hystmodal__window hystmodal__window--post" role="dialog" aria-modal="true">
-					<button class="window__close close" data-hystclose class="hystmodal__close">
-						<svg class="close__icon">
-							<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
-						</svg>
-					</button>
-		
-		
-					<div class="modal-post">
-		
-						<div class="modal-post__content">
-							<h2 class="modal-post__title">
-								PROJECT TITLE
-							</h2>
-							<div class="modal-post__info">
-								<div class="modal-post__info-item">
-									CATEGORY
-								</div>
-								<time class="modal-post__info-item" datetime="2020">
-									2020
-								</time>
-							</div>
-							<div class="modal-post__img-wrap">
-								<picture class="modal-post__img">
-									<source
-										srcset="data:image/gif;base64,R0lGODlhvAIsAYAAAP///wAAACH5BAEAAAEALAAAAAC8AiwBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fy1+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLopXAQA7"
-										type="image/webp">
-									<img
-										src="data:image/gif;base64,R0lGODlhvAIsAYAAAP///wAAACH5BAEAAAEALAAAAAC8AiwBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fy1+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLopXAQA7"
-										srcset="data:image/gif;base64,R0lGODlhvAIsAYAAAP///wAAACH5BAEAAAEALAAAAAC8AiwBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fy1+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLopXAQA7"
-										width="700" height="300" alt="img">
-								</picture>
-							</div>
-							<p class="modal-post__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus.
-								Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem,
-								elementum
-								consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo.
-								Praesent
-								dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus
-								orci
-								luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
-								sem.
-								Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
-								nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse
-								placerat, quam vitae ullamcorper
-							</p>
+	<div class="hystmodal__wrap">
+		<div class="hystmodal__window hystmodal__window--post" role="dialog" aria-modal="true">
+			<button class="window__close close" data-hystclose class="hystmodal__close">
+				<svg class="close__icon">
+					<use xlink:href="assets/images/icons/cancel.svg#cancel"></use>
+				</svg>
+			</button>
+
+
+			<div class="modal-post">
+
+				<div class="modal-post__content">
+					<h2 class="modal-post__title">
+						PROJECT TITLE
+					</h2>
+					<div class="modal-post__info">
+						<div class="modal-post__info-item">
+							CATEGORY
 						</div>
+						<time class="modal-post__info-item" datetime="2020">
+							2020
+						</time>
 					</div>
+					<div class="modal-post__img-wrap">
+						<picture class="modal-post__img">
+							<source
+								srcset="data:image/gif;base64,R0lGODlhvAIsAYAAAP///wAAACH5BAEAAAEALAAAAAC8AiwBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fy1+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLopXAQA7"
+								type="image/webp">
+							<img
+								src="data:image/gif;base64,R0lGODlhvAIsAYAAAP///wAAACH5BAEAAAEALAAAAAC8AiwBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fy1+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLopXAQA7"
+								srcset="data:image/gif;base64,R0lGODlhvAIsAYAAAP///wAAACH5BAEAAAEALAAAAAC8AiwBAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fy1+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjjruyGOPPv4IZJBCDklkkUYeiWSSSi7JZJNOPglllFJOSWWVVl6JZZZabslll15+CWaYYo5JZplmnolmmmquyWabbr4JZ5xyzklnnXbeiWeeeu7JZ59+/glooIIOSmihhh6KaKKKLopXAQA7"
+								width="700" height="300" alt="img">
+						</picture>
+					</div>
+					<p class="modal-post__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus.
+						Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem,
+						elementum
+						consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo.
+						Praesent
+						dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus
+						orci
+						luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis
+						sem.
+						Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in
+						nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse
+						placerat, quam vitae ullamcorper
+					</p>
 				</div>
 			</div>
-		</div>	</main>
+		</div>
+	</div>
+</div> -->
+	</main>
 
 	<footer class="footer">
 		<div class="footer__container container padding padding_right-left">

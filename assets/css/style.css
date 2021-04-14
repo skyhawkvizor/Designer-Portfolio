@@ -863,7 +863,7 @@ html.scrollFixed, html.hystmodal__opened {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 11;
+    z-index: 9999;
 }
 
 .padding {
@@ -919,7 +919,7 @@ html.scrollFixed, html.hystmodal__opened {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 98;
+    z-index: 10000;
 }
 
 .menuOpen .header {
@@ -2882,7 +2882,7 @@ img.lazyloaded {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    z-index: 100;
+    z-index: 9998;
     transition: background-color 0.3s;
 }
 
