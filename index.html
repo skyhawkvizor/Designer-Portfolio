@@ -40,31 +40,32 @@
 
 <body class="body">
 
-	<header class="header">
-		<div class="header__container container padding padding_right-left">
-			<div class="header__inner">
-				<a href="/" class="header__logo logo" title="logo">
-					<svg class="logo__icon">
-						<use xlink:href="assets/images/icons/logo.svg#logo"></use>
-					</svg>
+	<!-- <header class="header">
+	<div class="header__container container padding padding_right-left">
+		<div class="header__inner">
+			<a href="/" class="header__logo logo" title="logo">
+				<svg class="logo__icon">
+					<use xlink:href="assets/images/icons/logo.svg#logo"></use>
+				</svg>
+			</a>
+			<nav class="nav">
+				<a href="#intro" class="nav__link hoverEffect">Home</a>
+				<a href="#works" class="nav__link hoverEffect">WORK</a>
+				<a href="#about" class="nav__link hoverEffect">ABOUT ME</a>
+				<a href="#opinions" class="nav__link hoverEffect">Opinions</a>
+				<a href="#blog" class="nav__link hoverEffect">BLOG</a>
+				<a href="#resume" class="nav__link btn btn--w130 btn--p30x10 btn--fz14 hire-me hoverEffect pl">
+					<span>HIRE ME</span>
 				</a>
-				<nav class="nav">
-					<a href="#intro" class="nav__link hoverEffect">Home</a>
-					<a href="#works" class="nav__link hoverEffect">WORK</a>
-					<a href="#about" class="nav__link hoverEffect">ABOUT ME</a>
-					<a href="#opinions" class="nav__link hoverEffect">Opinions</a>
-					<a href="#blog" class="nav__link hoverEffect">BLOG</a>
-					<a href="#resume" class="nav__link btn btn--w130 btn--p30x10 btn--fz14 hire-me hoverEffect pl">
-						<span>HIRE ME</span>
-					</a>
-				</nav>
-				<div class="header__burger burger">
-					<span></span>
-				</div>
+			</nav>
+			<div class="header__burger burger">
+				<span></span>
 			</div>
-	
 		</div>
-	</header>	<main class="main">
+
+	</div>
+</header> -->
+	<main class="main">
 		<div class="popup popup-call">
 			<div class="popup-table table">
 				<div class="cell">
@@ -368,126 +369,128 @@
 			</div>
 		</div>		<section class="intro" id="intro">
 			<div class="intro__container container padding">
-				<div class="intro__inner">
+		
+				<a href="#resume" class="pl">
+					<span>resume</span>
+				</a>
 		
 		
-				</div><!-- /.intro__inner  -->
+				<div class="tabs">
+					<nav class="block__nav">
+						<div class="tab__navitem active">1</div>
+						<div class="tab__navitem">2</div>
+					</nav>
+					<div class="block__items">
+						<div class="tab__item active">svsvsvsvssvsdv</div>
+						<div class="tab__item">bfgfnfnfnfnfngn</div>
+					</div>
+				</div>
+		
+		
+				<form action="#" method="get" data-ms="ms_1">
+					<div class="form-block__item">
+						<input type="text" id="" autocomplete="off" class="input l req phone" data-error="???" data-value="adadadad"
+							name=form[]>
+					</div>
+					<div class="form-block__item">
+						<div class="check">
+							<input type="checkbox" name="form[check1]" id="">check
+						</div>
+						<div class="check">
+							<input type="checkbox" name="form[check2]" id="">check
+						</div>
+						<div class="check">
+							<input type="checkbox" name="form[check3]" id="">check
+						</div>
+					</div>
+					<div class="form-block__item">
+						<div class="options">
+							<div class="option active">
+								radio
+								<input type="radio" value="1" name=form[ratio] id="">
+							</div>
+							<div class="option">
+								radio
+								<input type="radio" value="2" name=form[ratio] id="">
+							</div>
+							<div class="option">
+								radio
+								<input type="radio" value="3" name=form[ratio] id="">
+							</div>
+						</div>
+					</div>
+					<div class="form-block__item">
+						<select name="form[select]" id="" class="">
+							<option value="1" class="" selected="selected">#1</option>
+							<option value="2" class="">#2</option>
+							<option value="3" class="">#3</option>
+							<option value="4" class="">#4</option>
+						</select>
+					</div>
+					<div class="form-block__item">
+						<div class="category-params-item-price">
+							<div class="category-params-item-price-table table">
+								<div class="cell">
+									<input type="text" name="form[]" id="rangefrom">
+								</div>
+								<div class="cell">
+									<input type="text" name="form[]" id="rangeto">
+								</div>
+							</div>
+							<div class="category-params-item-price-range" id="range"></div>
+						</div>
+					</div>
+		
+					<div class="form-block__item">
+						<div class="rating-block">
+							<div class="rating edit">
+								<!-- едіт треба шоб можна було мінять -->
+								<div class="rating__line"></div>
+								<div class="rating__activeline"></div>
+								<input type="hidden" value="4.3" name="rating">
+								<div class="stars">
+									<div class="star"><i>Ужасно</i></div>
+									<div class="star"><i>Плохо</i></div>
+									<div class="star"><i>нормально</i></div>
+									<div class="star"><i>Хорошо</i></div>
+									<div class="star"><i>Отлично</i></div>
+								</div>
+							</div>
+							<div class="rating__value">4.3</div>
+						</div>
+					</div>
+		
+		
+		
+					<div class="form-block__item">
+						<button type="submit" class="form-block__btn btn">Submit</button>
+					</div>
+				</form>
+				<a href="#antonov" data-vid="rRU-8PUVU3Y" class="pl"> выдос</a>
+		
+				<div class="block__gallery gallery-block gallery">
+					<a href="assets/images/works/3D-icons/preview.png" class="gallery-block__item">
+						<img src="assets/images/works/3D-icons/preview.png" alt="">
+					</a>
+					<a href="assets/images/works/3D-icons/preview.png" class="gallery-block__item">
+						<img src="assets/images/works/3D-icons/preview.png" alt="">
+					</a>
+					<a href="assets/images/works/3D-icons/preview.png" class="gallery-block__item">
+						<img src="assets/images/works/3D-icons/preview.png" alt="">
+					</a>
+					<a href="assets/images/works/3D-icons/preview.png" class="gallery-block__item">
+						<img src="assets/images/works/3D-icons/preview.png" alt="">
+					</a>
+				</div>
+		
+				<p class="text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi autem maiores veritatis enim corporis
+					asperiores
+					maxime sed dolorem nostrum quasi molestiae voluptas numquam dolor, consequuntur modi, officiis sit neque
+					illo
+					<span data-content="вспливашка" class="tip">???</span>
+				</p>
 			</div><!-- /.intro__container  -->
-		
-			<div class="tabs">
-				<nav class="block__nav">
-					<div class="tab__navitem active">1</div>
-					<div class="tab__navitem">2</div>
-				</nav>
-				<div class="block__items">
-					<div class="tab__item active">svsvsvsvssvsdv</div>
-					<div class="tab__item">bfgfnfnfnfnfngn</div>
-				</div>
-			</div>
-		
-		
-			<form action="#" method="get" data-ms="ms_1">
-				<div class="form-block__item">
-					<input type="text" id="" autocomplete="off" class="input l req phone" data-error="???" data-value="adadadad"
-						name=form[]>
-				</div>
-				<div class="form-block__item">
-					<div class="check">
-						<input type="checkbox" name="form[check1]" id="">check
-					</div>
-					<div class="check">
-						<input type="checkbox" name="form[check2]" id="">check
-					</div>
-					<div class="check">
-						<input type="checkbox" name="form[check3]" id="">check
-					</div>
-				</div>
-				<div class="form-block__item">
-					<div class="options">
-						<div class="option active">
-							radio
-							<input type="radio" value="1" name=form[ratio] id="">
-						</div>
-						<div class="option">
-							radio
-							<input type="radio" value="2" name=form[ratio] id="">
-						</div>
-						<div class="option">
-							radio
-							<input type="radio" value="3" name=form[ratio] id="">
-						</div>
-					</div>
-				</div>
-				<div class="form-block__item">
-					<select name="form[select]" id="" class="">
-						<option value="1" class="" selected="selected">#1</option>
-						<option value="2" class="">#2</option>
-						<option value="3" class="">#3</option>
-						<option value="4" class="">#4</option>
-					</select>
-				</div>
-				<div class="form-block__item">
-					<div class="category-params-item-price">
-						<div class="category-params-item-price-table table">
-							<div class="cell">
-								<input type="text" name="form[]" id="rangefrom">
-							</div>
-							<div class="cell">
-								<input type="text" name="form[]" id="rangeto">
-							</div>
-						</div>
-						<div class="category-params-item-price-range" id="range"></div>
-					</div>
-				</div>
-		
-				<div class="form-block__item">
-					<div class="rating-block">
-						<div class="rating edit">
-							<!-- едіт треба шоб можна було мінять -->
-							<div class="rating__line"></div>
-							<div class="rating__activeline"></div>
-							<input type="hidden" value="4.3" name="rating">
-							<div class="stars">
-								<div class="star"><i>Ужасно</i></div>
-								<div class="star"><i>Плохо</i></div>
-								<div class="star"><i>нормально</i></div>
-								<div class="star"><i>Хорошо</i></div>
-								<div class="star"><i>Отлично</i></div>
-							</div>
-						</div>
-						<div class="rating__value">4.3</div>
-					</div>
-				</div>
-		
-		
-		
-				<div class="form-block__item">
-					<button type="submit" class="form-block__btn btn">Submit</button>
-				</div>
-			</form>
-			<a href="#antonov" data-vid="rRU-8PUVU3Y" class="pl"> выдос</a>
-		
-			<div class="block__gallery gallery-block gallery">
-				<a href="assets/images/works/3D-icons/preview.png" class="gallery-block__item">
-					<img src="assets/images/works/3D-icons/preview.png" alt="">
-				</a>
-				<a href="assets/images/works/3D-icons/preview.png" class="gallery-block__item">
-					<img src="assets/images/works/3D-icons/preview.png" alt="">
-				</a>
-				<a href="assets/images/works/3D-icons/preview.png" class="gallery-block__item">
-					<img src="assets/images/works/3D-icons/preview.png" alt="">
-				</a>
-				<a href="assets/images/works/3D-icons/preview.png" class="gallery-block__item">
-					<img src="assets/images/works/3D-icons/preview.png" alt="">
-				</a>
-			</div>
-		
-			<p class="text">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi autem maiores veritatis enim corporis asperiores
-				maxime sed dolorem nostrum quasi molestiae voluptas numquam dolor, consequuntur modi, officiis sit neque illo
-				<span data-content="вспливашка" class="tip">???</span>
-			</p>
-		
 		</section><!-- /.intro  -->	</main>
 
 	<!-- <footer class="footer">
